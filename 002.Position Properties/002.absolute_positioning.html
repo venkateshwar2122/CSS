@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        .con1 {
+            height:100px;
+            width:200px;
+            background-color: blue;
+            position: relative;        /* RELATIVE */
+        }
+        .con2 {
+            height:100px;
+            width:200px;
+            background-color: red;
+            position: absolute;        /* ABSOLUTE */
+            top: 10px;    /* Moves .con2 10px down from the top of .con1 */
+            left: 20px;   /* Moves .con2 20px right from the left edge of .con1 */
+            right: 0px;   /* No effect because left is already set */
+        }
+    </style>
+</head>
+<body>
+    <div class="con1"></div>
+    <div class="con2"></div>
+    <div class="con3"></div>
+    <div class="con4"></div>
+</body>
+</html>

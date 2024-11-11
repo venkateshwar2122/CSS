@@ -1,0 +1,48 @@
+<!-- To oraganize data either rowwise or column wise we will use flex properties-->
+
+<!-- when we make any element as display:flex,all its IMMEDIATE CHILD ELEMENTS will
+ become flex items
+
+
+ NOTE: FLEX ITEMS will be adjusted rowwise
+
+ in below exsample:item1,item2,item3,item4 are flex items of parent container
+-->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .container{
+        width:100%;
+        height:300px;
+        background-color: yellow;
+        display:flex;                       /* DISPALY FLEX */
+    }
+    .container div{
+        width:100px;
+        height:50px;
+        border:1px solid green;
+        background-color: orange;
+    
+    }
+
+</style>
+<body>
+
+    <div class="container">
+        <div class="i1">item1</div>
+        <div class="i2">item2</div>
+        <div class="i3">item3</div>
+        <div class="i4">item4</div>
+
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,159 @@
+<!--
+In HTML, elements are broadly categorized as inline or block elements based on how they 
+behave in relation to other elements on the page. Here’s a breakdown of the two:
+
+1. Block Elements(takes full width , always start with new line)
+->block element always start in the new line , it doesnot allow other elements to 
+continue in the same line
+Definition: Block elements take up the full width of their container by default and start
+ on a new line.
+Characteristics:
+Always begin on a new line.
+Take up the entire width of the container unless styled otherwise.
+Can contain other block elements or inline elements.
+Examples: <div>, <h1> to <h6>, <p>, <header>, <footer>, <section>, <article>
+
+2. Inline Elements
+Definition: Inline elements only take up as much width as necessary and do not start on a 
+new line.
+Characteristics:
+Do not start on a new line; they appear next to each other.
+Only take up as much width as needed by their content.
+Can contain only other inline elements, text, or images.
+Examples: <span>, <a>, <strong>, <em>, <img>, <input>
+
+  -->
+
+  <!--
+  By default every HTML ELEMENT MAY BE INLINE OR BLOCK.
+  TO change that default behaviour:-
+
+  1) display: none;
+  
+  2} display:hidden;
+
+   3) display: inline-block;
+-
+   4)display:inline;
+  
+  -->
+
+  <!--in below example div is block element and span is inline element.
+  in the code below we have not done any modiufication as of now
+  -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            width:200px;
+            height:100px;
+        }
+        .d1{
+            background-color: red;
+            
+        }
+        .d2{
+            background-color: yellow;
+        }
+        .d3{
+            background-color: green;
+        }
+    </style>
+</head>
+<body>
+    <div class="d1">DIV-1</div>
+    <div class ="d2">DIV-2</div>
+    <div class="d3">DIV-3</div>
+
+
+    <span class ="d1">SPAN1</span>
+    <span class = "d2">SPAN2</span>
+    <span class = "d3">SPAN3</span>
+    
+</body>
+</html>
+
+
+<!--
+
+in this HTML example, we can explore the differences between display: none, display: block, 
+display: inline-block, and display: inline by modifying the styles of <div> and 
+<span> elements. Here’s how each display type would affect these elements:
+
+1. display: none;
+
+Effect: The element will not be displayed on the page at all; it is completely removed 
+from the document's flow.
+Use: To hide elements completely without affecting the layout of other elements.
+Example:
+
+.d1 {
+    display: none;
+}
+
+Result: The red box (DIV-1) and red text (SPAN1) will not appear on the page.
+
+2. display: block;
+
+Effect: The element takes up the full width of its container and begins on a new line, 
+pushing subsequent content down.
+Use: For elements like <div> that need to act as containers or create distinct sections.
+Example:
+
+.d2 {
+    display: block;
+}
+
+Result:
+
+<div class="d2"> (yellow) takes up the full width of the container and 
+    will push DIV-3 below it.
+<span class="d2"> (yellow) will also take up the full width, 
+    pushing SPAN3 below it and treating the span like a block element.
+
+    3. display: inline-block;
+
+Effect: The element takes up only as much width as necessary but maintains block-like 
+properties, such as respecting width and height. Elements remain on the same line as 
+other inline or inline-block elements.
+Use: When you want block-like styling (with set width/height) while keeping elements 
+on the same line.
+Example:
+
+.d3 {
+    display: inline-block;
+}
+
+Result:
+
+<div class="d3"> (green) will only take up 200px of width and 100px of height, but 
+    DIV-2 will stay above it because DIV-3 is still treated as a block within the <div> flow.
+<span class="d3"> (green) will appear on the same line as SPAN2, with its height and 
+    width applied.
+
+4. display: inline;
+
+Effect: The element only takes as much width as its content requires. Width and 
+height properties are ignored.
+Use: For inline elements like <span> that need to appear inline with other text or elements.
+
+ Example:
+
+.d1 {
+    display: inline;
+}
+
+Result:
+
+<div class="d1"> (red) will appear inline with other elements, ignoring the specified 
+    width and height.
+<span class="d1"> (red) will appear inline as usual, with no changes in layout.
+
+
+-->

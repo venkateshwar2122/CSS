@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .container{
+        width:100%;
+        height:300px;
+        background-color: yellow;
+        display:flex;                       /* DISPALY FLEX */
+    }
+    .container div{
+        width:100px;
+        height:50px;
+        border:1px solid green;
+        background-color: orange;
+    
+    }
+
+</style>
+<body>
+
+    <div class="container">
+        <div class="i1">item1</div>
+        <div class="i2">item2</div>
+        <div class="i3">item3</div>
+        <div class="i4">item4</div>
+
+    </div>
+    
+</body>
+</html>
+
+
+<!--
+
+In this example, the .container div has display: flex, which makes it a flex container.
+ The child div elements (items 1–4) are flex items, and flex-direction along with justify-content and align-items properties can control the arrangement and 
+alignment of these items.
+
+Let’s go over each property one by one:
+
+1. flex-direction
+
+The flex-direction property defines the direction in which the flex container arranges 
+its items. 
+Possible values are:
+
+row (default): Items are arranged in a row from left to right.
+row-reverse: Items are arranged in a row from right to left.
+column: Items are arranged in a column from top to bottom.
+column-reverse: Items are arranged in a column from bottom to top.
+
+Example 1: flex-direction: row; (default)
+
+.container {
+    display: flex;
+    flex-direction: row;
+}
+Effect: Items (item1, item2, etc.) will be displayed in a row from left to right within
+ the container.
+
+Example 2: flex-direction: row-reverse;
+
+.container {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+Effect: Items will be displayed in a row from right to left within the container.
+
+Example 3: flex-direction: column;
+
+
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+Effect: Items will be displayed in a vertical column, with item1 at the top and item4 
+at the bottom.
+
+Example 4: flex-direction: column-reverse;
+
+.container {
+    display: flex;
+    flex-direction: column-reverse;
+} 
+
+Effect: Items will be displayed in a vertical column from bottom to top, with item4 
+at the top and item1 at the bottom.
+
+
+2. justify-content
+
+The justify-content property aligns items along the main axis (defined by flex-direction).
+
+flex-start: Items are aligned to the start of the main axis.
+flex-end: Items are aligned to the end of the main axis.
+center: Items are centered along the main axis.
+space-between: Items are spread out with equal space between them.
+space-around: Items are spread out with space around them.
+
+Example: justify-content: center;
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+Effect: Items will be centered horizontally within the container (if flex-direction: row) 
+or vertically if using flex-direction: column.
+
+3. align-items
+
+The align-items property aligns items along the cross axis (perpendicular to the main axis).
+
+flex-start: Items are aligned at the start of the cross axis.
+flex-end: Items are aligned at the end of the cross axis.
+center: Items are centered along the cross axis.
+stretch (default): Items stretch to fill the container along the cross axis (only if no fixed height or width is set on the items).
+baseline: Items align along their baselines.
+
+Example: align-items: center;
+
+.container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+Effect: Items will be vertically centered within the container if flex-direction: row is
+set, or horizontally centered if using flex-direction: column.
+
+Putting It All Together
+Here’s an example using all three properties:
+
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+    
+Explanation:
+
+flex-direction: column; makes items stack vertically.
+justify-content: center; centers items vertically within the container.
+align-items: center; centers items horizontally within the container.
+
+
+
+-->
+
+

@@ -71,3 +71,21 @@
     
 </body>
 </html>
+
+
+/* In this example, position: absolute; is used on the child elements inside .bnr to position each element at specific
+locations within the .bnr container.
+
+Explanation of Absolute Positioning with this Example
+
+Container Setup (.bnr):
+The .bnr div has position: relative; set on it.
+Setting position: relative; on .bnr establishes it as the positioned ancestor for its child elements. 
+This means that any child elements inside .bnr with position: absolute; will be positioned relative to .bnr, rather 
+than the entire page.
+
+Positioned Children (.t1, .tr, .b1, .br):
+Each <div> inside .bnr (representing .t1, .tr, .b1, and .br) is given position: absolute;. This allows 
+each of these elements to be positioned precisely within the .bnr container using top, bottom, left, and right properties.
+
+*/

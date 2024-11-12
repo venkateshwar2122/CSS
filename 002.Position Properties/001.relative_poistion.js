@@ -20,6 +20,9 @@ work unless the position property(like relative,absolute,etc) is set first. They
 
 /* Relative Position */
 
+/*NOTE   When position: relative is used, top, bottom, left, and right shift the element relative to its original position
+in the document flow. */
+
 <!DOCTYPE html>
 <html lang="en">
 <head>

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        *{                        /* to remove outline */
+            margin: 0;
+            padding:0;
+            outline:none;
+        }
+
+        nav{
+            width:100%;
+            height:10vh;
+            background-color: antiquewhite;
+            display:flex;            /* this flex for elements like home,about,login,register,contactus elements*/
+            justify-content:space-evenly;  /* flex-direction is row by default so x axis is major axis and y axis is minor axis.Since x axis is major axis therfore we are using justify-content here */
+            align-items: center;           /* since y axis is minor axis therefore we are using align-items here */
+        }
+        
+        nav div {
+            color : black;
+            font-size: 22px;
+
+        }
+
+         nav div:hover {            /* no space betweenn div and hover */
+            color: crimson;
+            font-size: 30px;
+         }
+         
+
+         .bnr{
+            width:100%;
+            height:90vh;
+            background: linear-gradient(rgba(120,57,210,07),rgba(200,125,50,0.6)),url("img.jpg");
+            background-size: cover; 
+            display: flex;            /* this flex for .bnrcont */
+            justify-content: center;
+            align-items: center;
+        }
+            
+
+                        /* .bnr without gradient property 
+
+                        .bnr{
+                            width:100%;
+                            height:90vh;
+                            background-image: url("img.jpg");
+                            background-size: cover; 
+                        }
+
+                        */
+
+                        
+
+                        /* henil doubt for fitting the image perfectly
+                        .bnr {
+                                width: 100%;
+                                height: 90vh;
+                                background-image: url("img.jpg");
+                                background-size: 100% 100%;        // Stretches to fit both width and height 
+                                background-position: center;
+                                background-repeat: no-repeat;
+                            }
+
+                        */
+        .bnrcont{
+            width:40%;                                      /* 100-60 = 40 */
+            border: 2px solid black;
+            display:flex;   /* this flex for h1 tag, p tag , button tag */
+            flex-direction: column;
+            align-items: center;
+            padding: 20px 20px;  /*  topbottom , left right */
+            gap :8px;  /* gap is used for gap between flex items */       
+
+        }
+
+        .bnrcont h1{
+            font-size: 37px;
+
+        }
+
+
+
+    </style>
+</head>
+
+<body>
+    <nav>
+        <div>Home</div>
+        <div>About</div>
+        <div>Login</div>
+        <div>Register</div>
+        <div>Contact us</div>
+    </nav>
+
+    <div class="bnr">
+        <div class="bnrcont">
+            <h1>Welcome to XYZ.com</h1>
+            <p1>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sed tempora ipsam explicabo quod hic neque voluptates ducimus nesciunt quaerat ut. Magnam totam expedita, dolorem quod doloribus perferendis rerum illo inventore deleniti, ullam perspiciatis pariatur obcaecati explicabo, laboriosam commodi sit neque consequatur quidem id adipisci libero dolor corporis. Corrupti, ex alias?</p1>
+             <button> Know More ...</button>
+        </div>
+
+    </div>
+
+    <footer>@copyrights to XYZ.COM</footer>
+    
+</body>
+</html>

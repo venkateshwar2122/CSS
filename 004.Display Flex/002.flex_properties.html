@@ -38,7 +38,8 @@
 <!--
 
 In this example, the .container div has display: flex, which makes it a flex container.
- The child div elements (items 1–4) are flex items, and flex-direction along with justify-content and align-items properties can control the arrangement and 
+ The child div elements (items 1–4) are flex items, and flex-direction along with justify-content and 
+align-items properties can control the arrangement and 
 alignment of these items.
 
 Let’s go over each property one by one:
@@ -47,12 +48,12 @@ Let’s go over each property one by one:
 
 The flex-direction property defines the direction in which the flex container arranges 
 its items. 
-Possible values are:
 
-row (default): Items are arranged in a row from left to right.
-row-reverse: Items are arranged in a row from right to left.
-column: Items are arranged in a column from top to bottom.
-column-reverse: Items are arranged in a column from bottom to top.
+Possible values are:
+row (default):          Items are arranged in a row from left to right.
+row-reverse:            Items are arranged in a row from right to left.
+column:                 Items are arranged in a column from top to bottom.
+column-reverse:         Items are arranged in a column from bottom to top.
 
 Example 1: flex-direction: row; (default)
 
@@ -98,11 +99,11 @@ at the top and item1 at the bottom.
 
 The justify-content property aligns items along the main axis (defined by flex-direction).
 
-flex-start: Items are aligned to the start of the main axis.
-flex-end: Items are aligned to the end of the main axis.
-center: Items are centered along the main axis.
-space-between: Items are spread out with equal space between them.
-space-around: Items are spread out with space around them.
+flex-start:      Items are aligned to the start of the main axis.
+flex-end:        Items are aligned to the end of the main axis.
+center:          Items are centered along the main axis.
+space-between:   Items are spread out with equal space between them.
+space-around:   Items are spread out with space around them.
 
 Example: justify-content: center;
 
@@ -119,11 +120,11 @@ or vertically if using flex-direction: column.
 
 The align-items property aligns items along the cross axis (perpendicular to the main axis).
 
-flex-start: Items are aligned at the start of the cross axis.
-flex-end: Items are aligned at the end of the cross axis.
-center: Items are centered along the cross axis.
+flex-start:      Items are aligned at the start of the cross axis.
+flex-end:        Items are aligned at the end of the cross axis.
+center:         Items are centered along the cross axis.
 stretch (default): Items stretch to fill the container along the cross axis (only if no fixed height or width is set on the items).
-baseline: Items align along their baselines.
+baseline:         Items align along their baselines.
 
 Example: align-items: center;
 

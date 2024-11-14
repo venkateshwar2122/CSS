@@ -1,0 +1,63 @@
+//not completed
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .testcont{
+            width: 60%; /* Set width to 60% to make the border visible within the viewport */
+            height: auto; /* Use auto for height to adjust based on content */
+            border: 10px solid black; /* Border should now be visible */
+            padding: 30px 0px;
+            border-radius: 30px;   /*optional */
+            display: flex;
+            flex-direction:column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .img {                        /* this is not for img ,it is for div tag inside img" */
+            width:75px;
+            height:75px;
+            border-radius: 50%;
+            border:3px solid gray;
+
+            overflow: hidden; /* Ensures any overflow is clipped */
+          
+            display: flex; /* Centers the image if needed */
+           
+
+
+        }
+
+       .img img{
+        width:100%;
+        height:100%;
+        
+       }
+    </style>
+
+
+</head>
+<body>
+    <div class="testcont">
+        <div class="img">
+            <img src="/profile.img.jpg">
+        </div>
+
+        <p class="cont">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Asperiores at fugiat neque autem nesciunt unde vitae laudantium ea facere quo doloremque quia odio rem nihil quam quas nisi ut, sit molestiae. Nobis consequuntur minus explicabo incidunt optio! Sunt dolor eaque repellat eius doloribus maxime accusamus, placeat voluptatem. Necessitatibus quos commodi excepturi ad? Tenetur, impedit ullam et unde odit expedita veritatis quod dolorem id, vero officia iure obcaecati fugit ea rerum.
+        </p>
+
+    <p class="name">
+        <span>NAME:</span>Kumar
+    </p>
+
+    </div>
+    
+</body>
+</html>

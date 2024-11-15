@@ -1,1 +1,126 @@
-/..
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+     
+    <style>
+        *{
+            margin:0px;
+            padding:0px;
+            outline:none;
+        }
+            nav {
+                width: 100%;
+                height: 15vh;
+                display: flex;
+                justify-content: space-between; /* Distributes child elements evenly */
+               align-items: center; /* Aligns items vertically */
+                padding: 0 20px; /* Adds some horizontal padding */
+              background-color: rgb(252, 205, 255); /* Optional background for visibility */   
+            }
+        
+            .logo img {
+                width:50px;
+                height: 50px; /* Adjust image size */
+             /*   max-height: 100px; /* Prevents it from exceeding a certain height */
+            }
+        
+            .search {
+                display: flex;
+                align-items: center;
+                gap: 10px;  /* Adds spacing between input and icon */
+                border:3px solid red;
+                position: relative;  /* for its child i tag */
+            }
+        
+            .search input {
+                padding: 5px 10px;
+                font-size: 16px;
+                border: 5px solid black;
+                border-radius: 4px;
+                padding-right: 50px;   /*when entering input text it should not overlap with  search icon */
+                
+            }
+
+            .search i{
+                font-size: 20px;   /* size of icon */
+                position:absolute;
+                right:10px;    /*10px towards right of its parent box*/
+
+                
+
+
+            }
+        
+            .menu {
+                display: flex;
+                align-items: center;
+                gap: 15px; /* Adds spacing between menu items */
+            }
+        
+            .menu div {
+                cursor: pointer;
+                font-size: 16px;
+            }
+        
+            .menu .ppic img {
+                height: 40px; /* Adjust profile picture size */
+                border-radius: 50%; /* Makes it circular */
+            }
+
+            /*
+            The scrollbar appears below your page when using a live server because of 
+            extra margins, padding, or overflowing content.The nav or child elements
+             (like .search or .menu) might have padding or gaps that make their width exceed the viewport.
+           Fix: Use box-sizing: border-box; globally.   
+             *{
+                box-sizing: border-box;
+            }
+        */
+
+           
+            *{
+                box-sizing: border-box;
+            }
+
+
+
+        </style>
+        
+
+     
+
+</head>
+
+<body>
+    <nav>
+        <div class="logo">
+            <img src="https://img.freepik.com/free-vector/gradient-quill-pen-logo-with-tagline-template_23-2149813051.jpg?t=st=1731680169~exp=1731683769~hmac=fa68dac873bba19cf35fc30da5bcf204c69661ba5c0636b2265b67f357f2be08&w=740">    
+        </div>
+
+
+        <div class="search">
+            <input type="text" placeholder="enter data to search" />
+
+            <i class="fa-solid fa-magnifying-glass"></i>
+       
+        </div>
+
+
+        <div class="menu">
+            <div>About</div>
+            <div>Login</div>
+
+            <div class="ppic">
+                <img src="https://img.freepik.com/free-vector/colorful-bird-illustration-gradient_343694-1741.jpg?t=st=1731680478~exp=1731684078~hmac=aacbd832360fcf0d43a0c83958eea3dc3f40ba72df5b95656150b6457c08f161&w=740">
+            </div>
+       
+        </div>
+    </nav>
+    
+</body>
+</html>

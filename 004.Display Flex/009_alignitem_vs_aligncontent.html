@@ -3,85 +3,57 @@
 The align-items and align-content properties in CSS are both related to alignment in a flex container, but they serve different purposes:
 
 Key Differences:
+
 align-items:
 
 Aligns individual flex items within the flex container on the cross-axis (perpendicular to the main axis).
 Applies to all flex items within the container.
 Works regardless of whether the container is single-line or multi-line.
-align-content:
 
+
+align-content:
+To adjust flex items to center or beginning of the flex or enedinmg of the flex in minor axis when flex-items occupy multiple rows
+or columns along with the minor axis we will use align-content property 
 Aligns flex lines (groups of items) in a flex container when there is extra space on the cross-axis.
 Only works when the container has multiple lines (flex-wrap: wrap or flex-wrap: wrap-reverse).
 
-/* align-items example */
-
- <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>align-items Example</title>
-  <style>
-    .container {
-      display: flex;
-      height: 200px;
-      background-color: lightgray;
-      align-items: center; /* Center items vertically */
-    }
-
-    .item {
-      width: 50px;
-      height: 50px;
-      background-color: skyblue;
-      margin: 5px;
-    }
-  </style>
-</head>
-<body>
-  <div class="container">
-    <div class="item">1</div>
-    <div class="item">2</div>
-    <div class="item">3</div>
-  </div>
-</body>
-</html>
-
-
-/* align-content example */
+*/
 
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>align-content Example</title>
-  <style>
-    .container {
-      display: flex;
-      flex-wrap: wrap; /* Enables wrapping of items */
-      height: 300px;
-      background-color: lightgray;
-      align-content: space-between; /* Distribute flex lines with space in between */
-    }
-
-    .item {
-      flex: 0 0 30%; /* Each item takes 30% width */
-      height: 50px;
-      background-color: skyblue;
-      margin: 5px;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .con{
+            width: 100%;
+            height: 100vh;
+            background-color: aquamarine;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            align-content: center;      /*  replace with " align_items: center " to know the diffrenece */ 
+            gap:5px
+        }
+        .con div{
+            width: 30%;
+            height: 10vh;
+            background-color: brown;
+            border: 2px solid black;
+        }
+    </style>
 </head>
 <body>
-  <div class="container">
-    <div class="item">1</div>
-    <div class="item">2</div>
-    <div class="item">3</div>
-    <div class="item">4</div>
-    <div class="item">5</div>
-    <div class="item">6</div>
-  </div>
+    <div class="con">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
 </body>
 </html>
-
-

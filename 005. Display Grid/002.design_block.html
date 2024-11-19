@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            outline: none;
+        }
+        .maincon{
+            width:100%;
+            height: 100vh;
+            display: grid;
+            gap:5px;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr ; /* 8 Columns ..note sum should be 8 */
+
+
+        }
+        .maincon div{
+            border: 2px solid black;
+            
+        }
+        .con1{
+            background-color: violet;
+            grid-column: 1/9;               /* 1st column to (9-1)th column */
+            grid-row: 1/span 1;
+        }
+
+        .con2{
+            background-color: blueviolet;
+            grid-column: 1/span 1;       /* span is incuded*/
+            grid-row: 2/span 2;
+        
+        }
+
+        .con3{
+            background-color: brown;
+            grid-column: 2/span 3;
+            grid-row: 2/span 1;
+        }
+
+        .con4{
+            background-color: aquamarine;
+            grid-column: 5/span 3;
+            grid-row: 2/ span 1;
+        }
+
+        .con5{
+            background-color: crimson;
+            grid-column: 8/span 1;
+            grid-row: 2/span 5;
+        }
+
+        .con6{
+            background-color: rgb(208, 255, 205);
+            grid-column: 2/span 5;
+            grid-row: 3/span 1;
+        }
+
+        .con7{
+            background-color: coral;
+            grid-column: 7/span 1;
+            grid-row:3/ span 1;
+        }
+
+        .con8{
+            background-color: chartreuse;
+            grid-column: 1/ span 1;
+            grid-row: 4/span 3;
+        }
+        .con9{
+            background-color: gold;
+            grid-column: 2/span 1;
+            grid-row: 4/span 1;
+        }
+
+        .con10{
+            background-color: springgreen;
+            grid-column: 3/span 1;
+            grid-row: 4/span 1;
+        }
+        
+        .con11{
+            background-color:burlywood;
+            grid-column: 4/span 2;
+            grid-row: 4/span 3;
+        }
+        .con12{
+            background-color: cornflowerblue;
+            grid-column:6/span 2 ;
+            grid-row: 4/span 1;
+        }
+        .con13{
+            background-color: deeppink;
+            grid-column: 2/span 2;
+            grid-row: 5/span 2;
+        }
+        .con14{
+            background-color: darkviolet;
+            grid-column: 6/span 2;
+            grid-row: 5/span 1;
+        }
+        .con15{
+            background-color: indianred;
+            grid-column: 6/span 2;
+            grid-row: 6/span 1;
+        }
+        .con16{
+            background-color: orange;
+            grid-column:1/span 8;
+            grid-row: 7/span 1;
+        }
+            
+
+
+    </style>
+</head>
+<body>
+    <div class="maincon">
+        <div class="con1">1</div>
+        <div class="con2">2</div>
+        <div class="con3">3</div>
+        <div class="con4">4</div>
+        <div class="con5">5</div>
+        <div class="con6">6</div>
+        <div class="con7">7</div>
+        <div class="con8">8</div>
+        <div class="con9">9</div>
+        <div class="con10">10</div>
+        <div class="con11">11</div>
+        <div class="con12">12</div>
+        <div class="con13">13</div>
+        <div class="con14">14</div>
+        <div class="con15">15</div>
+        <div class="con16">16</div>
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .scon{
+            width:100%;
+            background-color: aqua;
+            padding:20px 0px;     /* if we dont give this then aqua color gets removed */
+            position: relative;
+            overflow: hidden;  /* to hide scroll bar */
+          
+          
+        }
+        span{
+            color: red;
+            font-size: 20px;
+            font-weight: bold;
+            position: absolute;
+            left:0px;
+            animation: scr 10s linear infinite alternate;
+          
+        }
+
+        @keyframes scr {
+            0%{
+                left:0px;
+            }
+            100%{
+                left:100%;
+            }
+            
+        }
+    </style>
+</head>
+
+<body>
+    <div class="scon">
+        <span>TEXT TO SCROLL</span>
+     
+    </div>
+
+    
+</body>
+</html>

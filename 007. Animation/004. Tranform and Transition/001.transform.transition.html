@@ -1,0 +1,60 @@
+<!--
+
+1) to change position of element in x direction:-
+      transform: translateX( value )
+2) to change position of element in y direction:-
+      transform: translateY( value )
+3) to translate position of element in both direction:-
+      transform: translate(X-value , Y-value)
+
+# Transition property is used to specify how much amount of time required to transform given 
+property from its initial value to new value.
+
+note : "all"  refers to all the modified css properties
+
+syntax:
+
+transition : all or css_property    duration  timing_fxn  ;
+
+
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=], initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .con{
+            width:200px;
+            height:100px;
+            background-color: yellow;
+            opacity: 1;              /* transparent */
+
+            transition: opacity 15s linear,
+                        width 5s linear,
+                        transform 8s ease-in;
+        
+        }
+    </style>
+</head>
+
+<body>
+    <div class="con" onclick="fun()"> </div>
+
+    <script>
+        let conref = document.getElementsByClassName("con")[0];
+
+        let fun=()=>{
+            conref.style.transform = "translateY(200px)";
+            conref.style.width = "500px";
+            conref.style.opacity= "0";
+        
+        
+        }
+
+    </script>
+    
+</body>
+</html>
